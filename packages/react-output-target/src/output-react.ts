@@ -82,7 +82,9 @@ async function copyResources(config: Config, outputTarget: OutputTargetReact) {
       src: path.join(srcDirectory, '../react-component-lib/', rf),
       dest: path.join(destDirectory, rf),
       warn: false,
+      keepDirStructure: true
     })),
+    srcDirectory
   );
 }
 

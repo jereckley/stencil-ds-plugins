@@ -9,7 +9,7 @@ import {
   isCoveredByReact,
 } from './utils/index';
 
-interface IonicReactInternalProps<ElementType> {
+interface IonicReactInternalProps<ElementType> extends React.HTMLAttributes<ElementType> {
   forwardedRef?: React.Ref<ElementType>;
   children?: React.ReactNode;
   href?: string;
